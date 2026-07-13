@@ -1,0 +1,33 @@
+{
+  "_comment": "个人简历网站 - 访问控制系统配置",
+  "site": {
+    "title": "个人简历",
+    "owner_name": "Your Name",
+    "owner_title": "全栈开发工程师",
+    "description": "一个精美的个人简历网站",
+    "version": "1.0.0"
+  },
+  "access_control": {
+    "enabled": true,
+    "manual_override": false,
+    "message": "网站暂时关闭维护中，请稍后再访问。",
+    "schedule": {
+      "enable_schedule": false,
+      "timezone": "Asia/Shanghai",
+      "windows": [
+        {
+          "name": "工作时间",
+          "days": [1, 2, 3, 4, 5],
+          "start": "09:00",
+          "end": "18:00"
+        }
+      ]
+    },
+    "password": "admin123",
+    "redirect_url": ""
+  },
+  "visit_log": {
+    "enabled": true,
+    "log_to_local_storage": true
+  }
+}

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="个人简历 - 全栈开发工程师">
+  <meta name="keywords" content="个人简历,前端开发,全栈工程师,portfolio">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="个人简历 | 全栈开发工程师">
+  <meta property="og:description" content="一个精美的个人简历网站">
+  <meta property="og:type" content="website">
+  <title>个人简历 | 全栈开发工程师</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
+  <!-- Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       Header / Navigation
+       ============================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">{<span>ZK</span>}</a>
+      <nav>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#hero" class="active">首页</a></li>
+          <li><a href="#about">关于我</a></li>
+          <li><a href="#experience">经历</a></li>
+          <li><a href="#skills">技能</a></li>
+          <li><a href="#projects">项目</a></li>
+          <li><a href="#education">教育</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">🌙</button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================
+       Hero Section
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="gradient-orb"></div>
+      <div class="gradient-orb"></div>
+      <div class="gradient-orb"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content fade-in">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          开放求职中
+        </div>
+        <h1 class="hero-title">
+          你好，我是<br>
+          <span class="gradient-text">Your Name</span>
+        </h1>
+        <h2 class="hero-title-2">
+          <span id="typewriter" data-phrases='["全栈开发工程师", "前端架构师", "开源爱好者", "终身学习者"]'></span>
+        </h2>
+        <p class="hero-desc">
+          拥有 5 年以上的 Web 开发经验，专注于构建高性能、可维护的前端应用。
+          擅长 React/Vue 生态、Node.js 后端及云原生部署。热爱技术，乐于分享。
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            📩 联系我
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            📂 查看项目
+          </a>
+          <a href="#" class="btn btn-outline" onclick="window.print()">
+            📄 下载简历
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item fade-in" style="transition-delay:0.1s">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">年经验</div>
+          </div>
+          <div class="stat-item fade-in" style="transition-delay:0.2s">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">完成项目</div>
+          </div>
+          <div class="stat-item fade-in" style="transition-delay:0.3s">
+            <div class="stat-number">30+</div>
+            <div class="stat-label">合作客户</div>
+          </div>
+          <div class="stat-item fade-in" style="transition-delay:0.4s">
+            <div class="stat-number">99%</div>
+            <div class="stat-label">客户满意</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       About Section
+       ============================================ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">About</span>
+        <h2 class="section-title">关于<span class="gradient-text">我</span></h2>
+        <p class="section-subtitle">了解我的背景、技能和热情所在</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper fade-in-left">
+          <div class="about-image-placeholder">
+            👨‍💻
+          </div>
+        </div>
+        <div class="about-content fade-in-right">
+          <h3>全栈开发工程师</h3>
+          <p>
+            我是一名充满热情的全栈开发工程师，拥有 5 年以上的 Web 开发经验。
+            从前端到后端，从架构设计到性能优化，我致力于用技术创造价值。
+          </p>
+          <p>
+            我相信好的代码不仅是功能的实现，更是在可维护性、性能和用户体验之间寻找最佳平衡。
+            在业余时间，我喜欢参与开源项目、撰写技术博客和探索新技术。
+          </p>
+          <div class="about-details">
+            <div class="about-detail-item">
+              <span class="label">姓名</span>
+              <span class="value">Your Name</span>
+            </div>
+            <div class="about-detail-item">
+              <span class="label">职位</span>
+              <span class="value">全栈开发工程师</span>
+            </div>
+            <div class="about-detail-item">
+              <span class="label">邮箱</span>
+              <span class="value">hello@example.com</span>
+            </div>
+            <div class="about-detail-item">
+              <span class="label">地点</span>
+              <span class="value">中国 · 北京</span>
+            </div>
+            <div class="about-detail-item">
+              <span class="label">经验</span>
+              <span class="value">5+ 年</span>
+            </div>
+            <div class="about-detail-item">
+              <span class="label">状态</span>
+              <span class="value" style="color:var(--color-success)">开放求职</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">📩 联系我</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Experience Section
+       ============================================ -->
+  <section class="section" id="experience" style="background:var(--color-bg-alt)">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">工作<span class="gradient-text">经历</span></h2>
+        <p class="section-subtitle">我的职业生涯里程碑</p>
+      </div>
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item current fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <span class="timeline-company">🏢 某科技有限公司</span>
+                <h3 class="timeline-title">高级前端开发工程师</h3>
+              </div>
+              <span class="timeline-date">2023.06 — 至今</span>
+            </div>
+            <p class="timeline-desc">
+              负责公司核心产品的前端架构设计与开发。主导了从 Vue 2 到 Vue 3 + TypeScript 的技术升级，
+              优化了首屏加载性能从 4.5s 降至 1.2s。带领 5 人前端团队，建立代码审查和自动化测试体系。
+            </p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Vue 3</span>
+              <span class="timeline-tag">TypeScript</span>
+              <span class="timeline-tag">Webpack</span>
+              <span class="timeline-tag">性能优化</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <span class="timeline-company">🏢 某互联网公司</span>
+                <h3 class="timeline-title">前端开发工程师</h3>
+              </div>
+              <span class="timeline-date">2021.03 — 2023.05</span>
+            </div>
+            <p class="timeline-desc">
+              参与多个 B 端和 C 端项目的开发。负责搭建组件库和工程化工具链，
+              实现 CI/CD 自动化流程。主导了微前端架构的调研与落地，提升了多团队协作效率。
+            </p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">React</span>
+              <span class="timeline-tag">微前端</span>
+              <span class="timeline-tag">Node.js</span>
+              <span class="timeline-tag">CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <span class="timeline-company">🏢 某创业公司</span>
+                <h3 class="timeline-title">初级全栈开发</h3>
+              </div>
+              <span class="timeline-date">2019.07 — 2021.02</span>
+            </div>
+            <p class="timeline-desc">
+              作为早期工程师加入，从零搭建了公司 SaaS 平台的全栈架构。
+              使用 Node.js + MongoDB 开发 RESTful API，前端采用 React + Ant Design 构建管理系统。
+              独立完成了支付模块、权限系统和数据看板的核心功能。
+            </p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Node.js</span>
+              <span class="timeline-tag">MongoDB</span>
+              <span class="timeline-tag">React</span>
+              <span class="timeline-tag">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Skills Section
+       ============================================ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">技术<span class="gradient-text">技能</span></h2>
+        <p class="section-subtitle">我擅长的技术栈与工具</p>
+      </div>
+      <div class="skills-grid">
+        <!-- 前端 -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-title">
+            <span class="icon">🎨</span> 前端开发
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML / CSS / JavaScript</span>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">React / Next.js</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Vue 3 / Nuxt</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="88%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">TypeScript</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 后端 -->
+        <div class="skill-category fade-in" style="transition-delay:0.15s">
+          <div class="skill-category-title">
+            <span class="icon">⚙️</span> 后端开发
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Node.js / Express</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="88%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Python / FastAPI</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">PostgreSQL / MySQL</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="82%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Redis / MongoDB</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps & 工具 -->
+        <div class="skill-category fade-in" style="transition-delay:0.3s">
+          <div class="skill-category-title">
+            <span class="icon">🛠️</span> DevOps & 工具
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Docker / K8s</span>
+              <span class="skill-percent">78%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="78%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Git / CI/CD</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">AWS / 阿里云</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Linux / Nginx</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="82%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Projects Section
+       ============================================ -->
+  <section class="section" id="projects" style="background:var(--color-bg-alt)">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">精选<span class="gradient-text">项目</span></h2>
+        <p class="section-subtitle">我参与和主导的部分项目展示</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card fade-in">
+          <div class="project-image">🏗️</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Node.js</span>
+            </div>
+            <h3 class="project-title">企业级低代码平台</h3>
+            <p class="project-desc">
+              一套可视化的低代码开发平台，支持拖拽式页面搭建、组件库管理、
+              业务流程编排，大幅提升内部系统的开发效率。
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">🔗 在线演示</a>
+              <a href="#" class="project-link">📖 了解更多</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-in" style="transition-delay:0.1s">
+          <div class="project-image" style="background:var(--color-accent-gradient-2)">📊</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">ECharts</span>
+              <span class="project-tag">WebSocket</span>
+            </div>
+            <h3 class="project-title">实时数据可视化大屏</h3>
+            <p class="project-desc">
+              为企业打造的多端适配数据监控大屏，支持实时数据推送、
+              多维度数据分析、自定义图表配置，日处理数据量超 100 万条。
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">🔗 在线演示</a>
+              <a href="#" class="project-link">📖 了解更多</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card fade-in" style="transition-delay:0.2s">
+          <div class="project-image" style="background:linear-gradient(135deg, #10b981, #059669)">📱</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React Native</span>
+              <span class="project-tag">GraphQL</span>
+              <span class="project-tag">AWS</span>
+            </div>
+            <h3 class="project-title">跨平台电商 App</h3>
+            <p class="project-desc">
+              基于 React Native 开发的跨平台电商应用，集成智能推荐、
+              实时物流追踪、在线支付等核心功能，用户量突破 10 万。
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">🔗 在线演示</a>
+              <a href="#" class="project-link">📖 了解更多</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card fade-in">
+          <div class="project-image" style="background:linear-gradient(135deg, #f59e0b, #d97706)">🤖</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">OpenAI</span>
+            </div>
+            <h3 class="project-title">AI 智能助手平台</h3>
+            <p class="project-desc">
+              基于大语言模型构建的智能助手平台，支持多轮对话、文档问答、
+              代码生成、内容创作等功能，为企业提供 AI 赋能解决方案。
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">🔗 在线演示</a>
+              <a href="#" class="project-link">📖 了解更多</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card fade-in" style="transition-delay:0.1s">
+          <div class="project-image" style="background:linear-gradient(135deg, #ec4899, #db2777)">📦</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">WebRTC</span>
+              <span class="project-tag">Redis</span>
+            </div>
+            <h3 class="project-title">实时协作文档系统</h3>
+            <p class="project-desc">
+              支持多人实时协同编辑的在线文档系统，基于 CRDT 算法解决冲突，
+              集成即时通讯、版本管理和权限控制，满足团队协作需求。
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">🔗 在线演示</a>
+              <a href="#" class="project-link">📖 了解更多</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card fade-in" style="transition-delay:0.2s">
+          <div class="project-image" style="background:linear-gradient(135deg, #6366f1, #4f46e5)">🔐</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Go</span>
+              <span class="project-tag">gRPC</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <h3 class="project-title">分布式权限管理系统</h3>
+            <p class="project-desc">
+              基于 RBAC + ABAC 混合模型的权限管理系统，支持百万级用户和
+              精细权限控制，提供审计日志、动态路由和策略热更新能力。
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">🔗 在线演示</a>
+              <a href="#" class="project-link">📖 了解更多</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Education Section
+       ============================================ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Education</span>
+        <h2 class="section-title">教育<span class="gradient-text">背景</span></h2>
+        <p class="section-subtitle">我的学习经历与学术成就</p>
+      </div>
+      <div class="education-grid">
+        <div class="education-card fade-in">
+          <div class="education-icon">🎓</div>
+          <h3 class="education-degree">计算机科学与技术 硕士</h3>
+          <p class="education-school">北京大学</p>
+          <p class="education-date">2017 — 2019</p>
+          <p class="education-desc">
+            研究方向为 Web 前端性能优化与用户体验。发表 2 篇 SCI 论文，
+            获国家奖学金。
+          </p>
+        </div>
+        <div class="education-card fade-in" style="transition-delay:0.15s">
+          <div class="education-icon">📚</div>
+          <h3 class="education-degree">软件工程 学士</h3>
+          <p class="education-school">武汉大学</p>
+          <p class="education-date">2013 — 2017</p>
+          <p class="education-desc">
+             GPA 3.8/4.0，获 ACM 竞赛区域赛银奖，
+            优秀毕业生。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Contact Section
+       ============================================ -->
+  <section class="section" id="contact" style="background:var(--color-bg-alt)">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">联系<span class="gradient-text">我</span></h2>
+        <p class="section-subtitle">期待与您的沟通与合作</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info fade-in-left">
+          <h3>保持联系</h3>
+          <p>
+            如果您对我的简历感兴趣，或者有合作机会想与我探讨，
+            请随时通过以下方式联系我。我会在 24 小时内回复。
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div>
+                <div class="contact-item-label">邮箱</div>
+                <div class="contact-item-value">hello@example.com</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📱</div>
+              <div>
+                <div class="contact-item-label">电话</div>
+                <div class="contact-item-value">+86 138-0000-0000</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <div class="contact-item-label">地址</div>
+                <div class="contact-item-value">中国 · 北京市朝阳区</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🐙</div>
+              <div>
+                <div class="contact-item-label">GitHub</div>
+                <div class="contact-item-value">github.com/yourname</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form fade-in-right" id="contact-form">
+          <div class="form-group">
+            <label for="form-name">姓名</label>
+            <input type="text" id="form-name" placeholder="请输入您的姓名" required>
+          </div>
+          <div class="form-group">
+            <label for="form-email">邮箱</label>
+            <input type="email" id="form-email" placeholder="请输入您的邮箱" required>
+          </div>
+          <div class="form-group">
+            <label for="form-subject">主题</label>
+            <input type="text" id="form-subject" placeholder="请输入主题">
+          </div>
+          <div class="form-group">
+            <label for="form-message">留言</label>
+            <textarea id="form-message" placeholder="请输入您想说的话..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">📩 发送消息</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Footer
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-text">
+        &copy; 2026 Your Name. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="#" onclick="window.print()">📄 打印简历</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       Scripts
+       ============================================ -->
+  <script src="assets/js/access-control.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
